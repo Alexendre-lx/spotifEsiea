@@ -10,11 +10,15 @@
 		2C35632D23A527720019A564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35632C23A527720019A564 /* AppDelegate.swift */; };
 		2C35632F23A527720019A564 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35632E23A527720019A564 /* SceneDelegate.swift */; };
 		2C35633123A527720019A564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35633023A527720019A564 /* ViewController.swift */; };
-		2C35633423A527720019A564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C35633223A527720019A564 /* Main.storyboard */; };
 		2C35633723A527720019A564 /* SpotifEsiea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C35633523A527720019A564 /* SpotifEsiea.xcdatamodeld */; };
 		2C35633923A527760019A564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C35633823A527760019A564 /* Assets.xcassets */; };
 		2C35633C23A527760019A564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C35633A23A527760019A564 /* LaunchScreen.storyboard */; };
 		2C35634723A527760019A564 /* SpotifEsieaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35634623A527760019A564 /* SpotifEsieaTests.swift */; };
+		2C35635223A529F70019A564 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35635123A529F70019A564 /* homeViewController.swift */; };
+		2C35635423A52A020019A564 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35635323A52A020019A564 /* searchViewController.swift */; };
+		2C35635623A52A1A0019A564 /* suggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35635523A52A1A0019A564 /* suggestionsViewController.swift */; };
+		2C35635823A52A250019A564 /* playerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35635723A52A250019A564 /* playerViewController.swift */; };
+		2C35635A23A52A300019A564 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35635923A52A300019A564 /* api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,6 @@
 		2C35632C23A527720019A564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C35632E23A527720019A564 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C35633023A527720019A564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C35633323A527720019A564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C35633623A527720019A564 /* SpotifEsiea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotifEsiea.xcdatamodel; sourceTree = "<group>"; };
 		2C35633823A527760019A564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C35633B23A527760019A564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		2C35634223A527760019A564 /* SpotifEsieaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifEsieaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C35634623A527760019A564 /* SpotifEsieaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifEsieaTests.swift; sourceTree = "<group>"; };
 		2C35634823A527760019A564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C35635123A529F70019A564 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		2C35635323A52A020019A564 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		2C35635523A52A1A0019A564 /* suggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestionsViewController.swift; sourceTree = "<group>"; };
+		2C35635723A52A250019A564 /* playerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerViewController.swift; sourceTree = "<group>"; };
+		2C35635923A52A300019A564 /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +92,15 @@
 				2C35632C23A527720019A564 /* AppDelegate.swift */,
 				2C35632E23A527720019A564 /* SceneDelegate.swift */,
 				2C35633023A527720019A564 /* ViewController.swift */,
-				2C35633223A527720019A564 /* Main.storyboard */,
 				2C35633823A527760019A564 /* Assets.xcassets */,
 				2C35633A23A527760019A564 /* LaunchScreen.storyboard */,
 				2C35633D23A527760019A564 /* Info.plist */,
 				2C35633523A527720019A564 /* SpotifEsiea.xcdatamodeld */,
+				2C35635123A529F70019A564 /* homeViewController.swift */,
+				2C35635323A52A020019A564 /* searchViewController.swift */,
+				2C35635523A52A1A0019A564 /* suggestionsViewController.swift */,
+				2C35635723A52A250019A564 /* playerViewController.swift */,
+				2C35635923A52A300019A564 /* api.swift */,
 			);
 			path = SpotifEsiea;
 			sourceTree = "<group>";
@@ -185,7 +197,6 @@
 			files = (
 				2C35633C23A527760019A564 /* LaunchScreen.storyboard in Resources */,
 				2C35633923A527760019A564 /* Assets.xcassets in Resources */,
-				2C35633423A527720019A564 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C35633723A527720019A564 /* SpotifEsiea.xcdatamodeld in Sources */,
+				2C35635823A52A250019A564 /* playerViewController.swift in Sources */,
 				2C35633123A527720019A564 /* ViewController.swift in Sources */,
+				2C35635623A52A1A0019A564 /* suggestionsViewController.swift in Sources */,
+				2C35635A23A52A300019A564 /* api.swift in Sources */,
+				2C35635423A52A020019A564 /* searchViewController.swift in Sources */,
 				2C35632D23A527720019A564 /* AppDelegate.swift in Sources */,
+				2C35635223A529F70019A564 /* homeViewController.swift in Sources */,
 				2C35632F23A527720019A564 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +245,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C35633223A527720019A564 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C35633323A527720019A564 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C35633A23A527760019A564 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
