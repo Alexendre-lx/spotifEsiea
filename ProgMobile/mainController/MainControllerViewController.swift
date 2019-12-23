@@ -16,23 +16,26 @@ class MainControllerViewController: UITabBarController, UITabBarControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = themeColor
+        self.tabBar.barStyle = .black
         delegate = self
         api.getToken { (response) in
             print(response)
             
-            
-            
             let item1 = ViewController()
             let firstVc = UINavigationController(rootViewController: item1)
-            let icon1 = UITabBarItem(title: "home", image: nil, tag: 0)
+            firstVc.navigationBar.barStyle = .blackTranslucent
+            firstVc.title = "SpotifEsiea"
+            let icon1 = UITabBarItem(title: "home", image: UIImage.init(imageLiteralResourceName: "homeIcon"), tag: 0)
             item1.tabBarItem = icon1
             let item2 = SearchViewController()
             let secondVc = UINavigationController(rootViewController: item2)
-            let icon2 = UITabBarItem(title: "search", image: nil, tag: 1)
+            secondVc.title = "SearchPlayer"
+            secondVc.navigationBar.barStyle = .blackTranslucent
+            let icon2 = UITabBarItem(title: "search", image: UIImage.init(imageLiteralResourceName: "searchIcon"), tag: 1)
             item2.tabBarItem = icon2
             let item3 = playerViewController()
             item3.initNotif()
-            let icon3 = UITabBarItem(title: "player", image: nil, tag: 2)
+            let icon3 = UITabBarItem(title: "player", image: UIImage.init(imageLiteralResourceName: "playerIcon"), tag: 2)
             item3.tabBarItem = icon3
             let controllers = [firstVc,secondVc,item3]  //array of the root view controllers displayed by the tab bar interface
             self.viewControllers = controllers

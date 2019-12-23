@@ -90,6 +90,12 @@ class customTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollecti
             self.controller.navigationController?.pushViewController(detailView, animated: true)
                     break
         case "playlists":
+            let alert = UIAlertController(title: "Attention", message: "La musique va s'ouvrir si vous avez l'application spotify", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                guard let url = URL(string: self.newPlaylists[indexPath.row].directLink) else { return }
+                  UIApplication.shared.open(url)
+            }))
+            self.controller.present(alert, animated: true, completion: nil)
                 break
             default:
                 break

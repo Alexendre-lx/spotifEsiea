@@ -109,8 +109,7 @@ class apiLooker {
                 case .failure(let error):
                     print(error)
                 }
-                }
-        
+            }
     }
     
     func getToken (completion: @escaping (Bool)->()) {

@@ -14,6 +14,7 @@
 		2CBCFAD323AEBFB100E66ABF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBCFAC523AEBFA700E66ABF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CE28E1023B038B40000DE53 /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE28E0823B038B40000DE53 /* FlowViewController.swift */; };
 		545AE676DE0A4547C942AA45 /* Pods_ProgMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5C00B357E7F210CBAF8B73 /* Pods_ProgMobile.framework */; };
+		EC2E9C0C23B0CDCA00FFBD78 /* detailVCExtensionTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E9C0B23B0CDCA00FFBD78 /* detailVCExtensionTableViewDataSource.swift */; };
 		EC3008F323A3981E00048CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3008F223A3981E00048CC2 /* AppDelegate.swift */; };
 		EC3008F523A3981E00048CC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3008F423A3981E00048CC2 /* SceneDelegate.swift */; };
 		EC3008F723A3981E00048CC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3008F623A3981E00048CC2 /* ViewController.swift */; };
@@ -102,6 +103,7 @@
 		2CE28E0823B038B40000DE53 /* FlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
 		57464A3F6D7DF945776A2ED6 /* Pods-ProgMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgMobile/Pods-ProgMobile.release.xcconfig"; sourceTree = "<group>"; };
 		BC5C00B357E7F210CBAF8B73 /* Pods_ProgMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2E9C0B23B0CDCA00FFBD78 /* detailVCExtensionTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailVCExtensionTableViewDataSource.swift; sourceTree = "<group>"; };
 		EC3008EF23A3981E00048CC2 /* ProgMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3008F223A3981E00048CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3008F423A3981E00048CC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,10 +137,12 @@
 		2C02A8B123AFAD310038214E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2CE28E0823B038B40000DE53 /* FlowViewController.swift */,
 				EC3008F623A3981E00048CC2 /* ViewController.swift */,
 				2C02A8B923AFAE030038214E /* detailsViewController.swift */,
 				ECD08CCB23AD0229007F4EBC /* customTableViewCell.swift */,
 				ECD08CCD23AD0FA0007F4EBC /* customCollectionViewCell.swift */,
+				EC2E9C0B23B0CDCA00FFBD78 /* detailVCExtensionTableViewDataSource.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,6 +187,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EC2E9C1423B0CEAB00FFBD78 /* mainController */ = {
+			isa = PBXGroup;
+			children = (
+				EC30090B23A3AC9500048CC2 /* MainControllerViewController.swift */,
+			);
+			path = mainController;
+			sourceTree = "<group>";
+		};
 		EC3008E623A3981E00048CC2 = {
 			isa = PBXGroup;
 			children = (
@@ -205,14 +217,13 @@
 		EC3008F123A3981E00048CC2 /* ProgMobile */ = {
 			isa = PBXGroup;
 			children = (
+				EC2E9C1423B0CEAB00FFBD78 /* mainController */,
 				2C054F6723B0355000533306 /* helper */,
 				2C054F6623B0350E00533306 /* Player */,
 				2C3E804523AFC90800BDCE9F /* Search */,
 				2C02A8B123AFAD310038214E /* Home */,
 				EC3008F223A3981E00048CC2 /* AppDelegate.swift */,
-				EC30090B23A3AC9500048CC2 /* MainControllerViewController.swift */,
 				EC3008F423A3981E00048CC2 /* SceneDelegate.swift */,
-				2CE28E0823B038B40000DE53 /* FlowViewController.swift */,
 				EC3008FE23A3982000048CC2 /* Assets.xcassets */,
 				EC30090023A3982000048CC2 /* LaunchScreen.storyboard */,
 				EC30090323A3982000048CC2 /* Info.plist */,
@@ -426,6 +437,7 @@
 				2C054F6523B034EF00533306 /* playerViewController.swift in Sources */,
 				EC3008F523A3981E00048CC2 /* SceneDelegate.swift in Sources */,
 				EC3008FD23A3981E00048CC2 /* ProgMobile.xcdatamodeld in Sources */,
+				EC2E9C0C23B0CDCA00FFBD78 /* detailVCExtensionTableViewDataSource.swift in Sources */,
 				2C054F5C23B0010200533306 /* searchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

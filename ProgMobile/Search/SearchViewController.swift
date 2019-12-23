@@ -60,9 +60,18 @@ class SearchViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (self.tracks[indexPath.row].previewUrl != "<null>"){guard let url = URL(string: self.tracks[indexPath.row].directLink) else { return }
-            UIApplication.shared.open(url)} else {
-        }
+        
+        let alert = UIAlertController(title: "Attention", message: "La musique va s'ouvrir si vous avez l'application spotify", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            if (self.tracks[indexPath.row].previewUrl.count < 10){
+                guard let url = URL(string: self.tracks[indexPath.row].directLink) else { return }
+                UIApplication.shared.open(url)} else {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName"), object: nil, userInfo: ["link": self.tracks[indexPath.row].previewUrl,"Artiste":self.tracks[indexPath.row].artists?.first?["name"],"Name": self.tracks[indexPath.row].name, "ImageLink": nil ])
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
+
     }
     
 }
