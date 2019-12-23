@@ -1,3 +1,4 @@
+##Alexendre OBLI
 # Spotif'Esiea !
 
 
@@ -43,15 +44,15 @@ une fois ceci fait, il ne me restrait plus qu'a consommer mon api à ma guise.
 ## Présentation de l'application
 
 L'application se décompose en trois sections : 
-	1. La page d'accueil :
-		Cette page permet de visualiser les trois sous sections de cette page comprennant l affichage des dernière nouveautés, les morceaux conseillés et enfin les playlists du moment
+    1. La page d'accueil :
+        Cette page permet de visualiser les trois sous sections de cette page comprennant l affichage des dernière nouveautés, les morceaux conseillés et enfin les playlists du moment
 
 #
-	2. La page de recherche :
-		Cette page permet de visualiser rechercher des morceaux par leur titre ou par l'interprète de la musique.
+    2. La page de recherche :
+        Cette page permet de visualiser rechercher des morceaux par leur titre ou par l'interprète de la musique.
 #
-	3. La page de lecteur :
-		Cette page permet de visualiser l'extrait en cours de lecture une fois qu'un extrait a été selectionné dans l'une des deux pages précédentes .
+    3. La page de lecteur :
+        Cette page permet de visualiser l'extrait en cours de lecture une fois qu'un extrait a été selectionné dans l'une des deux pages précédentes .
 
 ## Présentation technique de l'application
 
@@ -65,8 +66,8 @@ class MainControllerViewController: UITabBarController, UITabBarControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 ```
-	+ Les naviagations controllers qui encapsulent chacune des section
-	```swift
+    + Les naviagations controllers qui encapsulent chacune des section
+ ```swift
 let item1 = ViewController()
             let firstVc = UINavigationController(rootViewController: item1)
             firstVc.navigationBar.barStyle = .blackTranslucent
@@ -75,10 +76,10 @@ let item1 = ViewController()
             item1.tabBarItem = icon1
             let item2 = SearchViewController()
             let secondVc = UINavigationController(rootViewController: item2)
-```
+ ```
 
-		Les TablesViewController qui controllent les tables view de recherche d'accueuil.
-		```swift
+        Les TablesViewController qui controllent les tables view de recherche d'accueuil.
+```swift
 class ViewController: UITableViewController {
     var newReleasesData = Array<newReleases>()
     
@@ -94,8 +95,8 @@ class ViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 ```
-			Les collectionsViewController (réprésenté par le delegate et le datasource )qui régissent les collections de la page d'accueil.
-			```swift
+            Les collectionsViewController (réprésenté par le delegate et le datasource )qui régissent les collections de la page d'accueil.
+```swift
 class customTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
 ```
 #Captures d'écran
