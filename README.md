@@ -32,7 +32,7 @@ Dans un premier temps, mon developpment d'application s'était tourné vers un a
 
 Le projet actuel à pour but de reprendre le thème de spotify et d'en consommer les Api (ne nécessitants pas de connexion de l'utilisateur )
 
-#Image de l'accueil de l'api#
+![alt text](https://developer.spotify.com/assets/AuthG_Intro.png)
 
 Ainsi, en m'aidant de la documentation présente sur le site, il me fallait dans un premier temps faire en sorte que l'utilisateur puisse récuppérer un token d'accès valide pendant 1h et le stocker dans le téléphone. 
 #Image de api.getToken()#
@@ -99,3 +99,11 @@ class ViewController: UITableViewController {
 class customTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
 ```
 #Captures d'écran
+
+![alt text](http://dev.ravefeed.com/uploads/IMG_5216.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5217.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5218.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5219.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5220.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5221.PNG)
+![alt text](http://dev.ravefeed.com/uploads/IMG_5222.PNG)
