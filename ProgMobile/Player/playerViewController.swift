@@ -67,6 +67,11 @@ class playerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "removeNotif"), object: nil, userInfo: nil)
+    }
+
+    
     @objc func playPause() {
 
         if (titleView.text != nil){
@@ -86,6 +91,7 @@ class playerViewController: UIViewController {
     }
     
     @objc func playMusic(_ notification: NSNotification){
+        self.playPauseButton.setTitle("Loading..", for: .normal)
         if (self.player?.rate != 0) && (player?.error == nil) {
             player?.pause()
         }
@@ -93,11 +99,11 @@ class playerViewController: UIViewController {
             print("playing \((dict["ImageLink"] as? String)!)")
             if ((dict[dict.allKeys.first!] as? String)!.count >= 10){ do {
                 self.imageView.downloaded(from: (dict["ImageLink"] as? String)!)
-                self.playPauseButton.setTitle("Pause", for: .normal)
+                
                 self.artist.text = (dict["Artiste"] as? String)!
                 self.titleView.text = (dict["Name"] as? String)!
             let playerItem = AVPlayerItem(url: URL(string: ((dict["link"] as? String)!))!)
-            
+            self.playPauseButton.setTitle("Pause", for: .normal)
             self.player = AVPlayer(playerItem: playerItem)
             player!.volume = 1.0
             player!.play()

@@ -29,7 +29,7 @@ class SearchViewController: UITableViewController {
         waitingLabel.frame = self.waitingView.bounds
         waitingLabel.textAlignment = .center
         searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
-        searchBar.placeholder = "Your placeholder"
+        searchBar.placeholder = "Entrez une recherche"
         searchBar.delegate = self
         tableView.register(searchTableViewcell.self, forCellReuseIdentifier: "myCell")
         let leftNavBarButton = UIBarButtonItem(customView:searchBar)
@@ -66,7 +66,7 @@ class SearchViewController: UITableViewController {
             if (self.tracks[indexPath.row].previewUrl.count < 10){
                 guard let url = URL(string: self.tracks[indexPath.row].directLink) else { return }
                 UIApplication.shared.open(url)} else {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName"), object: nil, userInfo: ["link": self.tracks[indexPath.row].previewUrl,"Artiste":self.tracks[indexPath.row].artists?.first?["name"],"Name": self.tracks[indexPath.row].name, "ImageLink": nil ])
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName"), object: nil, userInfo: ["link": self.tracks[indexPath.row].previewUrl as String,"Artiste":self.tracks[indexPath.row].artists?.first?["name"],"Name": self.tracks[indexPath.row].name, "ImageLink": nil ])
             }
         }))
         self.present(alert, animated: true, completion: nil)
