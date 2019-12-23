@@ -77,8 +77,7 @@ let item1 = ViewController()
             let item2 = SearchViewController()
             let secondVc = UINavigationController(rootViewController: item2)
  ```
-
-        Les TablesViewController qui controllent les tables view de recherche d'accueuil.
+    + Les TablesViewController qui controllent les tables view de recherche d'accueuil.
 ```swift
 class ViewController: UITableViewController {
     var newReleasesData = Array<newReleases>()
@@ -95,7 +94,7 @@ class ViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 ```
-            Les collectionsViewController (réprésenté par le delegate et le datasource )qui régissent les collections de la page d'accueil.
+    + Les collectionsViewController (réprésenté par le delegate et le datasource )qui régissent les collections de la page d'accueil.
 ```swift
 class customTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
 ```
